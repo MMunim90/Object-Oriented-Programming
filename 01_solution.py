@@ -1,9 +1,12 @@
 # Basic class and object
 
 class Car:
+    total_car = 0
+    
     def __init__(self, brand, model):
         self.__brand = brand
         self.model = model
+        Car.total_car += 1 
     
     # here we can use any name here, but it is better practice to use name like, get, and set
     def get_brand(self):
@@ -39,5 +42,16 @@ my_car = Car("Toyota", "Corolla")
 # print(my_new_car.model)
 
 # polymorphism
-print(my_tesla.fuel_type())
-print(my_car.fuel_type())
+# print(my_tesla.fuel_type())
+# print(my_car.fuel_type())
+
+
+# 6.
+# Car("Tata", "Safari")
+# Car("Tata", "Nexon")
+
+# # print(safari.total_car)
+
+# print(Car.total_car)
+
+
