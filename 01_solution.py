@@ -36,12 +36,16 @@ class ElectricCar(Car):
 
         
 my_tesla = ElectricCar('Tesla', 'Model S', '85kWH')
+
+print(isinstance(my_tesla, Car))
+print(isinstance(my_tesla, ElectricCar))
+
 # print(my_tesla.model)
 # print(my_tesla.full_name())
 # print(my_tesla.__brand)
 # print(my_tesla.get_brand())
     
-my_car = Car("Toyota", "Corolla")
+# my_car = Car("Toyota", "Corolla")
 # print(my_car.brand)
 # print(my_car.model)
 # print(my_car.full_name())
@@ -69,9 +73,9 @@ my_car = Car("Toyota", "Corolla")
 # print(Car.general_description())
 
 
-8.
-my_other_car = Car("Tata", "Safari")
-# my_other_car.model = "City"
-Car("Tata", "Nexon")
+# 8.
+# my_other_car = Car("Tata", "Safari")
+# # my_other_car.model = "City"
+# Car("Tata", "Nexon")
+# # print(my_other_car.model)
 # print(my_other_car.model)
-print(my_other_car.model)
